@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+}
+
+/* Header Yapımı */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    height: 80px;
+    padding: 0px 15px;
+}
+
+.header .headerlink {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+/* Header Yapımı */
+
+/* Banner Yapımı */
+
+.banner {
+    background-image: url(/images/banner.jpg);
+    height: 400px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner .banner-articles {
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+}
+
+/* Banner Yapımı */
+
+/* Kart Yapımı */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.card .card-img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    padding: 0px 20px;
+}
+
+/* Kart Yapımı */
+
+/* Form Yapımı */
+
+.form-general {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 150px 0px;
+    margin: 10px 278px;
+}
+
+.form-element {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 13px 0px;
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-element:focus {
+    background-color: aquamarine;
+}
+
+.form-element:hover {
+    background-color: red;
+}
+
+
+
+/* Form Yapımı */
+
+/* Footer Yapımı */
+
+.footer {
+    background-color: chocolate;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Yapımı */
+
+
+/* Header Responsive Mobil Yapımı */
+
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+
+    .mobile-link-display {
+        display: none;
+    }
+
+    .mobilelink {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Kart ve Form Responsive Mobil Yapımı */
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-general {
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+}
